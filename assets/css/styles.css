@@ -765,11 +765,8 @@ img {
   margin-bottom: var(--mb-0-75);
 }
 
-.portfolio__button:hover .button__icon{
+.portfolio_button:hover .button_icon{
   transform: translateX(.25rem);
-}
-.test-button{
-  z-index: 2;
 }
 
 .swiper-button-prev::after,
@@ -804,8 +801,26 @@ img {
   outline: none;
 }
 
+.swiper-wrapper {
+  list-style: none; /* Remove qualquer marcador de lista */
+  padding: 0; /* Remove o padding que pode estar causando o bullet */
+  margin: 0; /* Remove a margem extra */
+}
 
+.swiper-slide {
+  list-style: none;  /* Remove qualquer estilo de lista das slides */
+  padding: 0;
+  margin: 0;
+}
 
+.portfolio__data{
+  display: flex;
+  flex-direction: column; /* Organiza os itens em coluna */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  text-align: center; /* Centraliza o texto dentro dos elementos */
+  padding: 20px; /* Adiciona um pouco de espaçamento */
+}
 
 
 /*==================== PAPER ====================*/
